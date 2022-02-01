@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="jumbotron col-11">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+    <main class="row">
+        <div class="col-3 leftBar">
+            <div class="search">
+                <h2 class="justify-content-center">Search for a City:</h2>
+                <input class="col-12"/>
+                <button class="btn searchBtn col-12">Search</button>
+                <br />
+            </div>
+            <div class="cities">
+                <div>
+                    <button class="btn cityBtn col-12">Austin</button>
+                </div>
+                <div>
+                    <button class="btn cityBtn col-12">Chicago</button>
+                </div>
+                <div>
+                    <button class="btn cityBtn col-12">New York</button>
+                </div>
+                <div>
+                    <button class="btn cityBtn col-12">Orlando</button>
+                </div>
+                <div>
+                    <button class="btn cityBtn col-12">San Francisco</button>
+                </div>
+                <div>
+                    <button class="btn cityBtn col-12">Seattle</button>
+                </div>
+                <div>
+                    <button class="btn cityBtn col-12">Denver</button>
+                </div>
+                <div>
+                    <button class="btn cityBtn col-12">Atlanta</button>
+                </div>
+            </div>
+        </div>
+        <div class="forecast col-8">
+            <div class="today">
+                <h2 id="cityName"><span class="place">Place </span><span class="date"> Date</span></h2>
+                <p>Temp:<span></span></p>
+                <p>Wind:<span></span></p>
+                <p>Humidity:<span></span></p>
+                <p>UV Index:<span></span></p>
+            </div>
+            <div class="fiveDay">
+                <h3>5-Day Forecast</h3>
+                <div class="days row">
+                    <div class="weekday col-2" id="day1">
+                        <p class="dayDate"><b><span>date</span></b></p>
+                        <p><span>icon</span></p>
+                        <p>Temp:<span></span></p>
+                        <p>Wind:<span></span></p>
+                        <p>Humidity:<span></span></p>
+                    </div>
+                    <div class="weekday col-2" id="day2">
+                        <p class="dayDate"><b><span>date</span></b></p>
+                        <p><span>icon</span></p>
+                        <p>Temp:<span></span></p>
+                        <p>Wind:<span></span></p>
+                        <p>Humidity:<span></span></p>
+                    </div>
+                    <div class="weekday col-2" id="day3">
+                        <p class="dayDate"><b><span>date</span></b></p>
+                        <p><span>icon</span></p>
+                        <p>Temp:<span></span></p>
+                        <p>Wind:<span></span></p>
+                        <p>Humidity:<span></span></p>
+                    </div>
+                    <div class="weekday col-2" id="day4">
+                        <p class="dayDate"><b><span>date</span></b></p>
+                        <p><span>icon</span></p>
+                        <p>Temp:<span></span></p>
+                        <p>Wind:<span></span></p>
+                        <p>Humidity:<span></span></p>
+                    </div>
+                    <div class="weekday col-2" id="day5">
+                        <p class="dayDate"><b><span>date</span></b></p>
+                        <p><span>icon</span></p>
+                        <p>Temp:<span></span></p>
+                        <p>Wind:<span></span></p>
+                        <p>Humidity:<span></span></p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <br/>
+    </footer>
+
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

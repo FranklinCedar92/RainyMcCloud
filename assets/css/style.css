@@ -1,0 +1,89 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+p {
+    padding: 0 5px;
+}
+
+input {
+    margin: 3px 0 6px 0;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+}
+
+.jumbotron {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 100%);
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    margin-bottom: 15px;
+    border-bottom: #C7C6C6 3px solid;
+}
+
+.btn {
+    width: 100%;
+    border-radius: 5px;
+    margin: 3px 0 3px 0
+}
+
+.searchBtn {
+    background-color: #007FFF;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.cityBtn {
+    border: none;
+    background: #C7C6C6;
+    border-radius: 5px;
+}
+
+.today {
+    border: black 2px solid;
+}
+
+.today h2 {
+    padding: 5px;
+}
+
+.fiveDay h3 {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.dayDate {
+    padding-top: 5px;
+}
+
+.days {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
+
+.weekday {
+    background: #2A496B;
+    margin: 0 8px;
+    color: white;
+}
