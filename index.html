@@ -21,82 +21,100 @@
         <div class="col-3 leftBar">
             <div class="search">
                 <h2 class="justify-content-center">Search for a City:</h2>
-                <input class="col-12"/>
-                <button class="btn searchBtn col-12">Search</button>
+                <input type="text" class="col-12" id="searchInput"></input>
+                <button class="btn searchBtn col-12" id="searchBtn">Search</button>
                 <br />
             </div>
             <div class="cities">
-                <div>
-                    <button class="btn cityBtn col-12">Austin</button>
-                </div>
-                <div>
-                    <button class="btn cityBtn col-12">Chicago</button>
-                </div>
-                <div>
-                    <button class="btn cityBtn col-12">New York</button>
-                </div>
-                <div>
-                    <button class="btn cityBtn col-12">Orlando</button>
-                </div>
-                <div>
-                    <button class="btn cityBtn col-12">San Francisco</button>
-                </div>
-                <div>
-                    <button class="btn cityBtn col-12">Seattle</button>
-                </div>
-                <div>
-                    <button class="btn cityBtn col-12">Denver</button>
-                </div>
-                <div>
-                    <button class="btn cityBtn col-12">Atlanta</button>
-                </div>
+                <ul id="searches">
+                    <!--<li>        
+                        <div>
+                            <button class="btn cityBtn col-12" id="austin">Austin</button>
+                        </div>
+                    </li>
+                    <li>    
+                        <div>
+                            <button class="btn cityBtn col-12" id="chicago">Chicago</button>
+                        </div>
+                    </li>
+                    <li>    
+                        <div>
+                            <button class="btn cityBtn col-12" id="nyc">New York</button>
+                        </div>
+                    </li>
+                    <li>    
+                        <div>
+                            <button class="btn cityBtn col-12" id="orlando">Orlando</button>
+                        </div>
+                    </li>
+                    <li>    
+                        <div>
+                            <button class="btn cityBtn col-12" id="sf">San Francisco</button>
+                        </div>
+                    </li>
+                    <li>    
+                        <div>
+                            <button class="btn cityBtn col-12" id="seattle">Seattle</button>
+                        </div>
+                    </li>
+                    <li>    
+                        <div>
+                            <button class="btn cityBtn col-12" id="denver">Denver</button>
+                        </div>
+                    </li>
+                    <li>    
+                        <div>
+                            <button class="btn cityBtn col-12" id="atlanta">Atlanta</button>
+                        </div>
+                    </li> -->
+                </ul>    
             </div>
         </div>
         <div class="forecast col-8">
             <div class="today">
                 <h2 id="cityName"><span class="place">Place </span><span class="date"> Date</span></h2>
-                <p>Temp:<span></span></p>
-                <p>Wind:<span></span></p>
-                <p>Humidity:<span></span></p>
-                <p>UV Index:<span></span></p>
+                <p>Temp:<span id="todayTemp"></span></p>
+                <p>Wind:<span id="todayWind"></span></p>
+                <p>Humidity:<span id="todayHum"></span></p>
+                <p>UV Index:<span id="todayUV"></span></p>
             </div>
             <div class="fiveDay">
                 <h3>5-Day Forecast</h3>
                 <div class="days row">
                     <div class="weekday col-2" id="day1">
-                        <p class="dayDate"><b><span>date</span></b></p>
-                        <p><span>icon</span></p>
-                        <p>Temp:<span></span></p>
-                        <p>Wind:<span></span></p>
-                        <p>Humidity:<span></span></p>
+                        <p class="dayDate"><b><span id="day1Date">date</span></b></p>
+                        <p><span id="day1Icon">icon</span></p>
+                        <p>Temp:<span id="day1Temp"></span></p>
+                        <p>Wind:<span id="day1Wind"></span></p>
+                        <p>Humidity:<span id="day1Hum"></span></p>
                     </div>
                     <div class="weekday col-2" id="day2">
-                        <p class="dayDate"><b><span>date</span></b></p>
-                        <p><span>icon</span></p>
-                        <p>Temp:<span></span></p>
-                        <p>Wind:<span></span></p>
-                        <p>Humidity:<span></span></p>
+                        <p class="dayDate"><b><span id="day2Date">date</span></b></p>
+                        <p><span id="day2Icon">icon</span></p>
+                        <p>Temp:<span id="day1Temp"></span></p>
+                        <p>Wind:<span id="day1Wind"></span></p>
+                        <p>Humidity:<span id="day1Hum"></span></p>
                     </div>
                     <div class="weekday col-2" id="day3">
-                        <p class="dayDate"><b><span>date</span></b></p>
-                        <p><span>icon</span></p>
-                        <p>Temp:<span></span></p>
-                        <p>Wind:<span></span></p>
-                        <p>Humidity:<span></span></p>
+                        <p class="dayDate"><b><span id="day3Date">date</span></b></p>
+                        <p><span id="day3Icon">icon</span></p>
+                        <p>Temp:<span id="day1Temp"></span></p>
+                        <p>Wind:<span id="day1Wind"></span></p>
+                        <p>Humidity:<span id="day1Hum"></span></p>
                     </div>
                     <div class="weekday col-2" id="day4">
-                        <p class="dayDate"><b><span>date</span></b></p>
-                        <p><span>icon</span></p>
-                        <p>Temp:<span></span></p>
-                        <p>Wind:<span></span></p>
-                        <p>Humidity:<span></span></p>
+                        <p class="dayDate"><b><span id="day4Date">date</span></b></p>
+                        <p><span id="day4Icon">icon</span></p>
+                        <p>Temp:<span id="day1Temp"></span></p>
+                        <p>Wind:<span id="day1Wind"></span></p>
+                        <p>Humidity:<span id="day1Hum"></span></p>
                     </div>
                     <div class="weekday col-2" id="day5">
-                        <p class="dayDate"><b><span>date</span></b></p>
-                        <p><span>icon</span></p>
-                        <p>Temp:<span></span></p>
-                        <p>Wind:<span></span></p>
-                        <p>Humidity:<span></span></p>
+                        <p class="dayDate"><b><span id="day5Date">date</span></b></p>
+                        <p><span id="day5Icon">icon</span></p>
+                        <p>Temp:<span id="day1Temp"></span></p>
+                        <p>Wind:<span id="day1Wind"></span></p>
+                        <p>Humidity:<span id="day1Hum"></span></p>
                     </div>    
                 </div>
             </div>
