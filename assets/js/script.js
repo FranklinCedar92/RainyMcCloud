@@ -64,17 +64,18 @@ var listings = [];
 var pastHandler = function(event) {
     event.preventDefault();
     
-    var searchInput = document.getElementById("searchInput").value;
+    //var searchInput = cityName;
 
+    //console.log(searchInput)
 
-    if (searchInput === "") {
+    if (cityName === "") {
         console.log("empty field");
         return false;
-    }
-
-    var listingObj = {
-        city: searchInput
-    };
+    } else {
+        var listingObj = {
+            city: cityName
+        };
+    };    
 
     console.log(listingObj);
     createListingEl(listingObj);
@@ -92,7 +93,6 @@ var createListingEl = function(listingObj) {
     
     var listBtnEl = document.createElement('button');
     listBtnEl.className = "btn cityBtn col-12";
-    listItemEl.setAttribute("list-id", idCounter);
 
     listBtnEl.textContent = listingObj.city;  
     console.log(listBtnEl); //this works
@@ -111,6 +111,7 @@ var createListingEl = function(listingObj) {
 // saves searches to local storage
 var saveListing = function() {
     localStorage.setItem("listings", JSON.stringify(listings));
+    console.log("listing saved!")
 };
 
 //retreives from storage
@@ -131,4 +132,4 @@ var loadListing = function() {
 
 document.querySelector("#searchBtn").addEventListener('click', pastHandler);
 
-// loadListing();
+loadListing();
