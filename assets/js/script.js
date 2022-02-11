@@ -1,7 +1,7 @@
 var APIkey = '836a020d141462da8b2466b0c5126868';
 var limit = 1;
 var cityName = document.getElementById("searchInput").value;
-//var cityName = "Dallas";
+
 var geoApiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=" + limit + "&appid=" + APIkey;
 
 var searchInput = document.querySelector('#searchInput');
@@ -12,15 +12,15 @@ var formSubmitHandler = function(event) {
     event.preventDefault();
   
     // get value from input element
-    var cityName = searchInput.value.trim();
+    cityName = searchInput.value.trim();
   
     if (cityName) {
         getData(cityName);
   
       // clear old content
-        searchInput.value = "";
-    }   else {
-        alert("Please enter a city");
+        //searchInput.value = "";
+   // }   else {
+    //    alert("Please enter a city");
     }
 };
 
@@ -63,10 +63,6 @@ var listings = [];
 // grabs search input to create object item
 var pastHandler = function(event) {
     event.preventDefault();
-    
-    //var searchInput = cityName;
-
-    //console.log(searchInput)
 
     if (cityName === "") {
         console.log("empty field");
@@ -106,6 +102,7 @@ var createListingEl = function(listingObj) {
 
     // gives each listing an id
     idCounter++;
+    console.log(idCounter);
 };
 
 // saves searches to local storage

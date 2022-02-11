@@ -31,6 +31,11 @@ ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    width: 100%
+}
+
+li.col-12 {
+    padding: 0px;
 }
 
 .jumbotron {
@@ -69,6 +74,9 @@ ul {
 .cities {
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .today {
