@@ -48,50 +48,44 @@ var getData = function() {
         .then(function(data) {
             console.log(data); //this works
 
-            for (var i = 0; i < data.daily.length; i++) {
             //Heute
-            document.getElementById("todayTemp").textContent = data.daily[i].temp.day + "F";
-            document.getElementById("todayWind").textContent = data.daily[i].wind_speed + ' mph';
-            document.getElementById("todayHum").textContent = data.daily[i].humidity + '%';
-            document.getElementById("todayUV").textContent = data.daily[i].uvi;
+            document.getElementById("todayTemp").textContent = data.daily[0].temp.day + "F";
+            document.getElementById("todayWind").textContent = data.daily[0].wind_speed + ' mph';
+            document.getElementById("todayHum").textContent = data.daily[0].humidity + '%';
+            document.getElementById("todayUV").textContent = data.daily[0].uvi;
 
-            
             //Morgen
             document.getElementById("day1Temp").textContent = data.daily[1].temp.day + "F";
             document.getElementById("day1Wind").textContent = data.daily[1].wind_speed + ' mph';
             document.getElementById("day1Hum").textContent = data.daily[1].humidity + '%';
 
-            //Uebermorgen
+            //Ubermorgen
             document.getElementById("day2Temp").textContent = data.daily[2].temp.day + "F";
             document.getElementById("day2Wind").textContent = data.daily[2].wind_speed + ' mph';
             document.getElementById("day2Hum").textContent = data.daily[2].humidity + '%';
 
-            //3ten Tag
+            //3ter Tag
             document.getElementById("day3Temp").textContent = data.daily[3].temp.day + "F";
             document.getElementById("day3Wind").textContent = data.daily[3].wind_speed + ' mph';
             document.getElementById("day3Hum").textContent = data.daily[3].humidity + '%';
 
-            //4ten Tag
+            //4ter Tag
             document.getElementById("day4Temp").textContent = data.daily[4].temp.day + "F";
             document.getElementById("day4Wind").textContent = data.daily[4].wind_speed + ' mph';
             document.getElementById("day4Hum").textContent = data.daily[4].humidity + '%';
 
-            //5ten Tag
+            //5ter Tag
             document.getElementById("day5Temp").textContent = data.daily[5].temp.day + "F";
             document.getElementById("day5Wind").textContent = data.daily[5].wind_speed + ' mph';
             document.getElementById("day5Hum").textContent = data.daily[5].humidity + '%';
-            }
             
         })
     })
 };
 
-
-
 searchBtn.addEventListener('click', formSubmitHandler);
 
-// city_name, current.temp, current.humidity, current.wind_speed, hourly.uvi
-
+// Adding recent searches to local storage
 var idCounter = 0;
 var searches = document.querySelector('#searches')
 
@@ -176,13 +170,18 @@ document.getElementById('day3Date').textContent = moment().add(3,'d').calendar('
 document.getElementById('day4Date').textContent = moment().add(4,'d').calendar('MM/DD/YYYY');
 document.getElementById('day5Date').textContent = moment().add(5,'d').calendar('MM/DD/YYYY');
 
+var pastBtnHandler = function() {
+
+}
+
 
 /*
-if (document.getElementById("todayUV").textContent < 2) {
+if (data.daily[0].uvi < 2) {
     document.getElementById("todayUV").classList("col-1 favorable");
-    } else if (document.getElementById("todayUV").textContent > 2 && document.getElementById("todayUV").textContent < 4) {
+    } else if (data.daily[0].uvi > 2 && data.daily[0].uvi < 4) {
         document.getElementById("todayUV").classList("col-1 moderate");
     } else {
         document.getElementById("todayUV").classList("col-1 severe");
     }
+}
 */
