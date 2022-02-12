@@ -33,49 +33,44 @@
         </div>
         <div class="forecast col-8">
             <div class="today">
-                <h2 id="cityName"><span class="place">Place </span> <!--city_name --><span class="date"> Date</span></h2><!-- moment.js -->
-                <p>Temp:<span id="todayTemp"></span></p> <!-- current.temp -->
-                <p>Wind:<span id="todayWind"></span></p> <!-- current.wind_speed -->
-                <p>Humidity:<span id="todayHum"></span></p> <!-- current.humidity -->
-                <p>UV Index:<span id="todayUV"></span></p> <!-- hourly.uvi -->
+                <h2 id="cityName"><span class="place"></span> <!--city_name --><span class="date"></span></h2><!-- moment.js -->
+                <p>Temp: <span id="todayTemp"></span></p> <!-- current.temp -->
+                <p>Wind: <span id="todayWind"></span></p> <!-- current.wind_speed -->
+                <p>Humidity: <span id="todayHum"></span></p> <!-- current.humidity -->
+                <p>UV Index: <span id="todayUV" class="uv"></span></p> <!-- hourly.uvi -->
             </div>
             <div class="fiveDay">
                 <h3>5-Day Forecast</h3>
                 <div class="days row">
                     <div class="weekday col-2" id="day1">
-                        <p class="dayDate"><b><span id="day1Date">date</span></b></p>
-                        <p><span id="day1Icon">icon</span></p>
-                        <p>Temp:<span id="day1Temp"></span></p>
-                        <p>Wind:<span id="day1Wind"></span></p>
-                        <p>Humidity:<span id="day1Hum"></span></p>
+                        <p class="dayDate"><b><span id="day1Date"></span></b></p>
+                        <p>Temp: <span id="day1Temp"></span></p>
+                        <p>Wind: <span id="day1Wind"></span></p>
+                        <p>Humidity: <span id="day1Hum"></span></p>
                     </div>
                     <div class="weekday col-2" id="day2">
-                        <p class="dayDate"><b><span id="day2Date">date</span></b></p>
-                        <p><span id="day2Icon">icon</span></p>
-                        <p>Temp:<span id="day1Temp"></span></p>
-                        <p>Wind:<span id="day1Wind"></span></p>
-                        <p>Humidity:<span id="day1Hum"></span></p>
+                        <p class="dayDate"><b><span id="day2Date"></span></b></p>
+                        <p>Temp: <span id="day1Temp"></span></p>
+                        <p>Wind: <span id="day1Wind"></span></p>
+                        <p>Humidity: <span id="day1Hum"></span></p>
                     </div>
                     <div class="weekday col-2" id="day3">
-                        <p class="dayDate"><b><span id="day3Date">date</span></b></p>
-                        <p><span id="day3Icon">icon</span></p>
-                        <p>Temp:<span id="day1Temp"></span></p>
-                        <p>Wind:<span id="day1Wind"></span></p>
-                        <p>Humidity:<span id="day1Hum"></span></p>
+                        <p class="dayDate"><b><span id="day3Date"></span></b></p>
+                        <p>Temp: <span id="day1Temp"></span></p>
+                        <p>Wind: <span id="day1Wind"></span></p>
+                        <p>Humidity: <span id="day1Hum"></span></p>
                     </div>
                     <div class="weekday col-2" id="day4">
-                        <p class="dayDate"><b><span id="day4Date">date</span></b></p>
-                        <p><span id="day4Icon">icon</span></p>
-                        <p>Temp:<span id="day1Temp"></span></p>
-                        <p>Wind:<span id="day1Wind"></span></p>
-                        <p>Humidity:<span id="day1Hum"></span></p>
+                        <p class="dayDate"><b><span id="day4Date"></span></b></p>
+                        <p>Temp: <span id="day1Temp"></span></p>
+                        <p>Wind: <span id="day1Wind"></span></p>
+                        <p>Humidity: <span id="day1Hum"></span></p>
                     </div>
                     <div class="weekday col-2" id="day5">
-                        <p class="dayDate"><b><span id="day5Date">date</span></b></p>
-                        <p><span id="day5Icon">icon</span></p>
-                        <p>Temp:<span id="day1Temp"></span></p>
-                        <p>Wind:<span id="day1Wind"></span></p>
-                        <p>Humidity:<span id="day1Hum"></span></p>
+                        <p class="dayDate"><b><span id="day5Date"></span></b></p>
+                        <p>Temp: <span id="day1Temp"></span></p>
+                        <p>Wind: <span id="day1Wind"></span></p>
+                        <p>Humidity: <span id="day1Hum"></span></p>
                     </div>    
                 </div>
             </div>
@@ -85,6 +80,7 @@
         <br/>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
